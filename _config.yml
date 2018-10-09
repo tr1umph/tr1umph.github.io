@@ -30,21 +30,15 @@ paginate_path: "/page:num/"
 inter_post_navigation: false
 highlightjs_theme: "monokai-sublime"
 
-category_archive:
-  type: liquid
-  path: /categires/
-tag_archive:
-  type: liquid
-  path: /tags/
 # Archive settings (see https://github.com/jekyll/jekyll-archives/)
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layout: 'archive'
-#   permalinks:
-#     category: '/category/:name/'
-#     tag: '/tag/:name/'
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
 
 # Disqus comments
 # disqus_shortname: bencentra
